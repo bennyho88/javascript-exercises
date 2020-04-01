@@ -63,12 +63,13 @@ with the character following it in the alphabet
 
 // String.fromCharCode
 // charCodeAt
-
+/*
 const moveCharsForward = (str) => 
     str.split('').map(char => String.fromCharCode(char.charCodeAt(0) + 1)).join('');
 
 
 console.log(moveCharsForward('abcd'));
+*/
     /*
 function replaceChar(str) {
 
@@ -124,3 +125,40 @@ function replaceChar(str) {
 
 console.log(replaceChar('hello'));
 */
+/* Exercise 4:
+--------------
+Write a Javascript program to get the current date.
+Expected Output:
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+*/
+
+function date() {
+
+const date = new Date();
+const day = date.getDay();
+const month = date.getMonth();
+const year = date.getFullYear();
+console.log(day);
+console.log(month);
+console.log(year)
+
+const fullDate1 = `${month}-${day}-${year}`;
+const fullDate2 = `${month}/${day}/${year}`;
+console.log(fullDate1);
+console.log(fullDate2);
+
+}
+
+date();
+
+const formatDate = (date = new Date()) => {
+
+    const days = date.getDate() + 1;
+    const months = date.getMonth() + 1;
+    const years = date.getFullYear();
+
+    return `${days}/${months}/${years}`;
+}
+
+console.log(formatDate());
