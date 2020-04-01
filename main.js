@@ -70,7 +70,7 @@ const moveCharsForward = (str) =>
 
 console.log(moveCharsForward('abcd'));
 */
-    /*
+    
 function replaceChar(str) {
 
     const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -79,13 +79,13 @@ function replaceChar(str) {
 
     const array = str.split('');
     console.log(array);
-
-    
+    const newArray = [];
+ 
     // select each letter from string
     
     array.forEach(letter => {
         // console.log(letter);
-
+       
         // replace each letter with a character following in the alphabet
 
         let position = alphabet.indexOf(letter);
@@ -96,15 +96,20 @@ function replaceChar(str) {
         
         let newLetter = alphabet[newPosition];
        
-        console.log(typeof newLetter);
-
-        
-        const newWord = newLetter.toString();
-        console.log(newWord);
+        newArray.push(newLetter)
+       console.log(newArray);
+       
+       
+        // const newWord = newArray.push(newLetter);
+       
         
     })
     
-
+    newArray.join('');
+    
+    const arrayWord = newArray.join('');
+    console.log(arrayWord);
+/*
     for (var i = 0; i < array.length; i++) {
 
         // console.log(array[i])
@@ -119,12 +124,12 @@ function replaceChar(str) {
        
  
     }
-
+*/
 
 }
 
 console.log(replaceChar('hello'));
-*/
+
 /* Exercise 4:
 --------------
 Write a Javascript program to get the current date.
@@ -132,25 +137,22 @@ Expected Output:
 mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
 */
-
+/*
 function date() {
 
 const date = new Date();
-const day = date.getDay();
-const month = date.getMonth();
+const day = date.getDate() + 1 ;
+const month = date.getMonth() + 1;
 const year = date.getFullYear();
-console.log(day);
-console.log(month);
-console.log(year)
 
-const fullDate1 = `${month}-${day}-${year}`;
-const fullDate2 = `${month}/${day}/${year}`;
-console.log(fullDate1);
-console.log(fullDate2);
+
+return `${day}-${month}-${year}`;
+
+
 
 }
 
-date();
+console.log(date());
 
 const formatDate = (date = new Date()) => {
 
@@ -162,3 +164,4 @@ const formatDate = (date = new Date()) => {
 }
 
 console.log(formatDate());
+*/
