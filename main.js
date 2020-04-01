@@ -8,7 +8,7 @@ of the number is 100 or if the sum of the two numbers is 100
 */
 
 
-
+/*
 function checkNumbers(a, b) {
 
     if(a === 100 || b === 100) {
@@ -39,3 +39,21 @@ console.log(isEqualTo100(80,20))
 
 console.log(isEqualTo100(28,68))
 */
+
+/* Exercise 2:
+--------------
+
+Write a Javacsript program to get the extenstion of a filename.
+*/
+
+
+const getFileExtension = (str) => 
+
+str.slice(str.lastIndexOf('.'));
+
+console.log(getFileExtension('index.html'));
+console.log(getFileExtension('webpack.config.js'));
+
+
+
+
