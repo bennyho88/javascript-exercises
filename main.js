@@ -70,7 +70,7 @@ const moveCharsForward = (str) =>
 
 console.log(moveCharsForward('abcd'));
 */
-    
+/*
 function replaceChar(str) {
 
     const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -124,12 +124,12 @@ function replaceChar(str) {
        
  
     }
-*/
+
 
 }
 
 console.log(replaceChar('hello'));
-
+*/
 /* Exercise 4:
 --------------
 Write a Javascript program to get the current date.
@@ -165,3 +165,26 @@ const formatDate = (date = new Date()) => {
 
 console.log(formatDate());
 */
+
+/* Exercise 5:
+----------
+
+Write a javascript program to create a new string adding "New!" in front of a
+given string. If the given string begins with "New!" already then return the original string
+
+*/
+
+function addString(str) {
+
+  
+   if(str.indexOf('New!') === 0) {
+       return str;
+   } else {
+       return 'New!' + ' ' + str;
+   }
+   
+}
+
+console.log(addString('New! offers'));
+
+
