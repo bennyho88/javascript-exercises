@@ -226,7 +226,7 @@ function combineString(str) {
 
 console.log(combineString('si'));
 */
-
+/*
 function combineString(str) {
 
     if(str.length < 3) {
@@ -243,7 +243,7 @@ console.log(combineString('abcdef'));
 console.log(combineString('abc123abc123'));
 
 console.log(combineString('ab'));
-
+*/
 /*
 const makeNewString = (str) =>  str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
 
@@ -252,4 +252,31 @@ console.log(makeNewString('abcdef'));
 console.log(makeNewString('abc123abc123'));
 
 console.log(makeNewString('ab'));
+*/
+
+/*
+Exercise 2:
+-------------
+Write a javascript program to extract the first half of a string of even length
+*/
+/*
+function extraxtString(str) {
+
+    if(str.length % 2 == 0 ) {
+        const word = str.substring(0, str.length / 2);
+        console.log(word);
+    }
+
+}
+
+console.log(extraxtString('temp'));
+console.log(extraxtString('temple'));
+console.log(extraxtString('temples'));
+*/
+/*
+const firstHalf = (str) => str.slice(0, str.length / 2);
+
+console.log(firstHalf('temp'));
+console.log(firstHalf('temple'));
+console.log(firstHalf('temples'));
 */
