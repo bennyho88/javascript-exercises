@@ -173,7 +173,7 @@ Write a javascript program to create a new string adding "New!" in front of a
 given string. If the given string begins with "New!" already then return the original string
 
 */
-
+/*
 function addString(str) {
 
   
@@ -186,5 +186,70 @@ function addString(str) {
 }
 
 console.log(addString('New! offers'));
+*/
+
+/* Beginner Exercises: Part 2
+----------------------------
+*/
+
+/*
+Write a Javascript program to create a new string from a given string taking
+the first 3 characters and the last 3 characters of a string and add them together. The string length must be 3 or more, if not, the original string is 
+returned.
+*/
+/*
+function combineString(str) {
+
+ 
+    // take the first 3 char
+    const word1 = str.substring(0,3);
+   // console.log(word1);
+
+    // take tha last 3 char
+
+    const word2 = str.substring(str.length - 3, str.length );
+    //console.log(word2)
+
+    // combine them together
+
+    const newWord = word1 + word2;
+    // console.log(newWord);
+
+    if(str.length >= 3) {
+        return newWord;
+    } else {
+        return str;
+    }
 
 
+}
+
+console.log(combineString('si'));
+*/
+
+function combineString(str) {
+
+    if(str.length < 3) {
+        return str;
+    } else {
+
+        const word = str.slice(0,3) + str.slice(-3);
+        return word;
+    }
+}
+
+console.log(combineString('abc'));
+console.log(combineString('abcdef'));
+console.log(combineString('abc123abc123'));
+
+console.log(combineString('ab'));
+
+/*
+const makeNewString = (str) =>  str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
+
+console.log(makeNewString('abc'));
+console.log(makeNewString('abcdef'));
+console.log(makeNewString('abc123abc123'));
+
+console.log(makeNewString('ab'));
+*/
