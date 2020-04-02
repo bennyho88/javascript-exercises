@@ -280,3 +280,32 @@ console.log(firstHalf('temp'));
 console.log(firstHalf('temple'));
 console.log(firstHalf('temples'));
 */
+
+/*
+Exercise 3:
+-------------
+Write a Javascript program to concatenate two strings except their first character
+*/
+/*
+function combineString(str1, str2) {
+
+    const word1 = str1.slice(1, str1.length);
+    console.log(word1);
+    const word2 = str2.slice(1, str2.length);
+    console.log(word2);
+
+    const newWord = word1 + word2;
+    return newWord;
+
+}
+
+console.log(combineString('hello', 'bonjour'));
+
+const concatenate = (str1, str2) => 
+
+    str1.slice(1) + str2.slice(1);
+
+
+console.log(concatenate('abc', 'def'));
+console.log(concatenate('Junior', 'Developer'));
+*/
