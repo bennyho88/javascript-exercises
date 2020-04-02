@@ -309,3 +309,35 @@ const concatenate = (str1, str2) =>
 console.log(concatenate('abc', 'def'));
 console.log(concatenate('Junior', 'Developer'));
 */
+
+/*
+Exercise 4:
+----------
+Given two values, write a Javascript program to find out which one is nearest to 100
+*/
+/*
+function findNumber(a,b) {
+
+    const num1 = 100 - a;
+    const num2 = 100 - b;
+
+    if(num1 < num2) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+console.log(findNumber(99,1));
+console.log(findNumber(49,51));
+console.log(findNumber(50,50));
+*/
+/*
+const closestTo100 = (a,b) => 
+    (100 - a) < (100 - b) ? a : b;
+
+
+console.log(closestTo100(99,1));
+console.log(closestTo100(49,51));
+console.log(closestTo100(50,50));
+*/
