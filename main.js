@@ -372,16 +372,41 @@ function checkString(char, string) {
 
 console.log(checkString('o', 'iojqdsfoqdosfo'));
 */
+/*
 const countChars = (str, char) => 
     str.split('').filter(ch => ch === char).length;
 
 
 const contains2To4 = (str, char) => 
     countChars(str, char) >= 2 && countChars(str, char) <= 4
+*/
+
+function contains2To4(str, char) {
+
+    const array = str.split('');
+
+    let counter = 0;
+    
+    for(var i = 0; i < array.length; i++) {
+
+        if(array[i] === char) {
+            counter++;
+        }
+    
+    }
+
+    if(counter >= 2 && counter <= 4) {
+        return true;
+    } else {
+        return false;
+    }
+
+    console.log(counter);
+}
 
 
-console.log(contains2To4('ooh!', 'o'));
-console.log(contains2To4('oh!', 'o'));
-console.log(contains2To4('oooh!', 'o'));
-console.log(contains2To4('ooooh!', 'o'));
-console.log(contains2To4('oooooh!', 'o'));
+console.log(contains2To4('ooh','o'));
+console.log(contains2To4('oh','o'));
+console.log(contains2To4('oooh','o'));
+console.log(contains2To4('ooooh','o'));
+console.log(contains2To4('oooooh','o'));
