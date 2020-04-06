@@ -427,10 +427,34 @@ Write a javascript program to find the number of even digits in a an array of in
 
  */
 
-
+/*
  const countEvenNumbers = (arr) => arr.filter(num => num % 2 === 0).length;
  
 
  console.log(countEvenNumbers([1,2,3,4,5,6]));
  console.log(countEvenNumbers([2,2,2,2,2,2]));
  console.log(countEvenNumbers([3,5,7,9,10,100]));
+*/
+ /*
+exercise 11:
+
+Write a javascript program to find the number of even values up to a given number
+
+ */
+
+ const countEvenNumbers = (arr) => arr.filter(num => num % 2 === 0).length;
+
+ 
+ const createArrayOfNumbers = (num) => {
+
+    const returnArray = [];
+
+    for(var i = 0; i <= num; i++) {
+        returnArray.push(i);
+    }
+
+    return returnArray;
+ }
+
+ console.log(countEvenNumbers(createArrayOfNumbers(6)));
+ console.log(countEvenNumbers(createArrayOfNumbers(9)));
